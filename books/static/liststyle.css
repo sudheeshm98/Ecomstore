@@ -1,0 +1,48 @@
+.custom-header-bar {
+    background-color: rgb(78, 41, 41);
+    background-image: url(book-header-bg.jpg);
+    background-blend-mode: color-dodge;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.custom-card {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-card-image {
+    aspect-ratio: 3/4;
+}
+
+.custom-card-body {
+    margin: auto 0;
+    padding: 0;
+    line-height: 2px;
+}
+
+@media(max-width: 576px) {
+    .custom-card {
+        padding: 0;
+    }
+
+    .custom-card-body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .title-text,
+    .author-text {
+        font-size: medium;
+    }
+}
+
+.title-text,
+.author-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-break: anywhere;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 2px;
+}

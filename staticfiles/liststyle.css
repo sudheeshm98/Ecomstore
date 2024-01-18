@@ -1,0 +1,24 @@
+.custom-card {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.custom-card-image {
+    aspect-ratio: 3/4;
+}
+
+.custom-card-body {
+    margin: auto 0;
+    padding: 0;
+    line-height: 2px;
+}
+
+.title-text,
+.author-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 2px;
+}

@@ -1,0 +1,11 @@
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.842) !important;
+}
+
+.custom-search-input {
+    height: 35px !important;
+    border-radius: 20px !important;
+    padding-left: 15px;
+    border: 1px solid black;
+    outline: none;
+}

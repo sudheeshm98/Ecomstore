@@ -1,0 +1,24 @@
+body {
+    background-color: burlywood !important;
+    background-image: url(book-header-bg.jpg) !important;
+}
+
+.custom-container {
+    margin-top: 10%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.custom-card {
+    background-color: rgba(223, 172, 106, 0.74) !important;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.form-input {
+    height: 35px;
+    border-radius: 20px !important;
+    border: none;
+    padding-left: 15px;
+}

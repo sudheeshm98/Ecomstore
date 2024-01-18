@@ -1,0 +1,32 @@
+{% extends 'home.html' %}
+{% block title %}Search{% endblock title %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3 class="text-secondary mw-3">Search Results</h3><hr>
+    <div class="container">
+        <div class="row">
+            {% for every in object_list %}
+            <div class="col-6 col-md-3">
+                <div class="card">
+                    <a href="{% url 'details' every.pk %}"></a>
+                    <img src="{{every.image_url}}" alt="">
+                    <h5><a href="{% url 'details' every.pk %}">{{every.title}}</a></h5>
+                    <p>Author: {{every.author}}</p>
+                </div>
+            </div>
+            {% empty %}
+            <h5 class"text-danger">No matches found.</h5>
+            {% endfor %}
+        </div>    
+    </div> 
+</body>
+</html>
+{% endblock content %}
